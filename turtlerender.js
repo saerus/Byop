@@ -1,9 +1,9 @@
 class TurtleRenderer {
   constructor() {
-    this.lengthF = 10;
-    this.lengthG = 10;
-    this.lengthH = 10;
-    this.lengthI = 10;
+    this.lengthF = 300;
+    this.lengthG = 150;
+    this.lengthH = 20;
+    this.lengthI = 50;
     this.rot = PI/20;
   }
   //
@@ -46,19 +46,19 @@ class TurtleRenderer {
       var c = sentence.charAt(this.i);
       //console.log("----------: "+c);
       if (c == 'F') {
-        this.branchStandard(this.lengthF, tige);
+        this.branchStandard(this.lengthF, imgF);
         //line(0, 0, this.lengthF, 0);
         //translate(this.lengthF, 0);
       } else if (c == 'G') {
-        this.branchStandard(this.lengthG, tige);
+        this.branchStandard(this.lengthG, imgG);
         // line(0, 0, this.lengthG, 0);
         // translate(this.lengthG, 0);
       } else if (c == 'H') {
-        this.branchStandard(this.lengthH, feuille);
+        this.branchStandard(this.lengthH, imgH);
         // line(0, 0, this.lengthH, 0);
         // translate(this.lengthH, 0);
       } else if (c == 'I') {
-        this.branchStandard(this.lengthI, feuille);
+        this.branchStandard(this.lengthI, imgI);
         // line(0, 0, this.lengthI, 0);
         // translate(this.lengthI, 0);
       } else if (c == '+') {

@@ -7,21 +7,13 @@ var tige;
 var feuille;
 //
 function preload() {
-  tige = loadImage('srces/tube2.png');
-  feuille = loadImage('srces/cone.png');
+  imgF = loadImage('srces/branch.png');
+  imgG = loadImage('srces/branch.png');
+  imgH = loadImage('srces/branch.png');
+  imgI = loadImage('srces/aiguille.png');
     //console.log(tige);
 }
 function setup() {
-  var x = [];
-  x.push({a: "a", b: "b"});
-  x.push({a: "asdfsdf", b: "b"});
-  x.push({a: "a", b: "b"});
-  x.push({a: "asdf", b: "b"});
-  x.push({a: "sa", b: "b"});
-  x.push({a: "a", b: "bsfa"});
-  x.pop();
-  console.log(x);
-  console.log("sadgfdhd");
   //
   createCanvas(windowWidth, windowHeight);
   turtle = new TurtleRenderer();
@@ -32,6 +24,34 @@ function setup() {
       render();
     }
   });
+  //
+  //
+  document.querySelector("#Fline .input-img").addEventListener("input", function(e) {
+    //imgF = this.;
+    imgF = loadImage("srces/"+this.files[0].name);
+    console.log(this.files[0]);
+    render();
+  });
+  document.querySelector("#Gline .input-img").addEventListener("input", function(e) {
+    //turtle.lengthG = this.value;
+    imgG = loadImage("srces/"+this.files[0].name);
+    console.log(this.files[0]);
+    render();
+  });
+  document.querySelector("#Hline .input-img").addEventListener("input", function(e) {
+    //turtle.lengthH = this.value;
+    imgH = loadImage("srces/"+this.files[0].name);
+    console.log(this.files[0]);
+    render();
+  });
+  document.querySelector("#Iline .input-img").addEventListener("input", function(e) {
+    //turtle.lengthI = this.value;
+    imgI = loadImage("srces/"+this.files[0].name);
+    console.log(this.files[0]);
+    render();
+  });
+  //
+  //
   document.querySelector("#lengthF").addEventListener("input", function(e) {
     turtle.lengthF = this.value;
     render();

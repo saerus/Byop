@@ -27,10 +27,10 @@
 <body>
   <div id="commands">
     <div>QTT = <input id="qtt" type="range" min="1" max="6" value="1"></input></div>
-    <div>F = <input id="ruleF" type="text" value="F[+F---G---I][-F+GI]"></input><input id="lengthF" type="range" min="10" max="400"></input></div>
-    <div>G = <input id="ruleG" type="text" value="G[++G++++++I][--G------I]"></input><input id="lengthG" type="range" min="10" max="400"></input></div>
-    <div>H = <input id="ruleH" type="text" value=""></input><input id="lengthH" type="range" min="10" max="100"></input></div>
-    <div>I = <input id="ruleI" type="text"></input><input id="lengthI" type="range" min="10" max="100"></input></div>
+    <div id="Fline">F = <input id="ruleF" type="text" value="[--G+G+GGH][-G+GHGG][GGGGG][+G-GHGGGH][++G-G-GGHG]"></input><input id="lengthF" value="300" type="range" min="10" max="400"></input><input class="input-img" type="file"/></div>
+    <div id="Gline">G = <input id="ruleG" type="text" value="G[----H-H][++++H+H]"></input><input id="lengthG" value="200" type="range" min="10" max="400"></input><input class="input-img" type="file"/></div>
+    <div id="Hline">H = <input id="ruleH" type="text" value="H[---IH]H[++++IH]"></input><input id="lengthH" value="20" type="range" min="10" max="400"></input><input class="input-img" type="file"/></div>
+    <div id="Iline">I = <input id="ruleI" type="text"></input><input id="lengthI" type="range" value="20" min="10" max="400"></input><input class="input-img" type="file"/></div>
   </div>
 </body>
 </html>
