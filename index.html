@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      font-family: Courier;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+    #commands {
+      position: absolute;
+    }
+  </style>
+  <script src="srces/p5.min.js"></script>
+  <script src="srces/p5.dom.min.js"></script>
+  <script src="srces/p5.sound.min.js"></script>
+  <script charset="UTF-8" src="rule.js"></script>
+  <script charset="UTF-8" src="lsystem.js"></script>
+  <script charset="UTF-8" src="turtlerender.js"></script>
+  <script charset="UTF-8" src="sketch.js"></script>
+</head>
+<body>
+  <div id="commands">
+    <div>QTT = <input id="qtt" type="range" min="1" max="6" value="1"></input></div>
+    <div>F = <input id="ruleF" type="text" value="F[+F---G---I][-F+GI]"></input><input id="lengthF" type="range" min="10" max="400"></input></div>
+    <div>G = <input id="ruleG" type="text" value="G[++G++++++I][--G------I]"></input><input id="lengthG" type="range" min="10" max="400"></input></div>
+    <div>H = <input id="ruleH" type="text" value=""></input><input id="lengthH" type="range" min="10" max="100"></input></div>
+    <div>I = <input id="ruleI" type="text"></input><input id="lengthI" type="range" min="10" max="100"></input></div>
+  </div>
+</body>
+</html>
